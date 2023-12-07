@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header><h2 class="game-name">Memo Game</h2></header>
+
+  <button id="changeTheme" onclick="darkLight()">Изменить тему</button>
+
+  <button id="start" >Start game</button>
+  <form id="level">
+    <input type="radio" name="complexity" value="8" checked="checked" id="r1"> <label for="r1"> Легко</label>
+    <input type="radio" namze="complexity" value="12" id="r2"> <label for="r2"> Средне</label>
+    <input type="radio" name="complexity" value="16" id="r3"> <label for="r3"> Сложно</label>
+  </form>
+  
+  <form id="image">
+    <input type="radio" name="img" value="arrImgDef" checked="checked" id="ri1"> <label for="ri1"> Цифры</label>
+    <input type="radio" name="img" value="arrImgLang" id="ri2"> <label for="ri2">Языки</label>
+  </form>
+
+  <form id="playWithMove">
+    <input type="checkbox" id="playWithMoveInp"> <label for="playWithMoveInp">Играть с ограниченными ходами</label>
+  </form>
+
+  <script defer src="script.js"></script>
+</body>
+
+</html>

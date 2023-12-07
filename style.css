@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url(img/Hand.cur), default;
+}
+
+header {
+    text-align: center;
+}
+
+
+.game-name {
+    padding: 25px 0px;
+}
+
+.mem-game {
+    width: 640px;
+    height: 535px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mem-card {
+    width: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.mem-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+
+
+
+#start {
+    margin: 0 auto 20px;
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+
+#time {
+    font-size: x-large;
+    text-align: center;
+    /* display: none; */
+}
+
+#moves {
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.theme-dark {
+    background: #313131;
+    color: white;
+}
+
+.theme-light {
+    background: white;
+    color: black;
+}
+
+#changeTheme {
+    margin: 0px auto 20px;
+    display: block;
+}
+
+form{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-right: 10px;
+}
